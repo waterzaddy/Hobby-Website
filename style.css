@@ -13,3 +13,25 @@ body {
   width: 15em;
   border-radius: 100%;
 }
+
+/********** NAVBAR **********/
+
+#navbar.fixed {
+  background-color: skyblue;
+  color: white;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+#navbar li {
+  display: inline;
+  padding: 1em;
+}
+
+#navbar a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
