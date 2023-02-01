@@ -9,6 +9,14 @@ body {
   line-height: 1.6rem;
 }
 
+.container {
+  height: auto;
+  padding: 3% 20% 3% 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .circle-img {
   width: 15em;
   border-radius: 100%;
@@ -17,12 +25,13 @@ body {
 /********** NAVBAR **********/
 
 #navbar.fixed {
-  background-color: skyblue;
+  background-color: palevioletred;
   color: white;
   position: fixed;
   width: 100%;
   padding: 10px;
   text-align: center;
+  z-index: 1;
 }
 
 #navbar li {
@@ -42,4 +51,86 @@ body {
   background-image: url(./images/MoominRunning-img.jpg);
   background-size: cover;
   height: 600px;
+}
+
+/********** ABOUT SECTION **********/
+
+#about .container {
+  background-color: skyblue;
+}
+.moomin {
+  order: 1;
+}
+
+.about-text {
+  order: 2;
+  box-sizing: border-box;
+  margin-left: 3em;
+}
+
+.tove {
+  order: 2;
+}
+
+.author-text {
+  order: 1;
+  box-sizing: border-box;
+  margin-right: 3em;
+}
+
+/********** CHARACTERS SLIDESHOW SECTION **********/
+
+#characters .container {
+  box-sizing: border-box;
+}
+.slideshow-container {
+  max-width: 60%;
+  position: relative;
+  margin: auto;
+}
+
+.character-slides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 0.75em;
+  top: 50%;
+  font-size: 30px;
+  transition: 0.7s ease;
+  border-radius: 0 3px 0 3px;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 3px 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(135, 206, 235, 0.8);
+}
+
+.slide-text {
+  position: absolute;
+  text-align: center;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }

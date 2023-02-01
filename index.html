@@ -11,7 +11,7 @@
   <body>
     <!---------- NAVBAR ---------->
     <nav id="navbar" class="fixed">
-      <div class="container">
+      <div>
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -27,7 +27,7 @@
       <!---------- TITLE SECTION ---------->
       <section id="title">
         <header>
-          <div class="container">
+          <div>
             <h1>
               WELCOME TO<span><br />MOOMINVALLEY</span>
             </h1>
@@ -37,8 +37,11 @@
       <!---------- ABOUT SECTION ---------->
       <section id="about">
         <div class="container">
-          <img class="circle-img" src="./images/Moomins-group-img.jpg" alt="Moomin Characters" />
-          <div>
+          <img
+            class="circle-img moomin"
+            src="./images/Moomins-group-img.jpg"
+            alt="Moomin Characters" />
+          <div class="about-text">
             <h2>Who are the Moomins?</h2>
             <p>
               The Moomins are a creation of author Tove Jansson. They Moomin family is Moomintroll,
@@ -48,8 +51,11 @@
           </div>
         </div>
         <div class="container">
-          <img class="circle-img" src="./images/ToveBW-img.jpg" alt="Portrait of Tove Jansson" />
-          <div>
+          <img
+            class="circle-img tove"
+            src="./images/ToveBW-img.jpg"
+            alt="Portrait of Tove Jansson" />
+          <div class="author-text">
             <h2>About the author</h2>
             <p>
               Born in Helsinki, Finland, Jansson's family were part of a Swedish-speaking minority
@@ -63,44 +69,59 @@
       </section>
 
       <!---------- CHARACTERS SECTION ---------->
-      <section id="characters" class="main-characters">
+      <section id="characters">
         <div class="container">
-          <img class="circle-img" src="./images/Moomin-img.jpg" alt="Moomin Characters" />
-          <h2>Moomin</h2>
-          <p>
-            Moomintroll or simply, Moomin, he is, well, a Moomin; a fun loving young boy from
-            Moominvalley. He always tries to be good but sometimes his curiosity gets him into
-            trouble. Brave and always wanting to make his friends happy, Moomin is the best friend
-            anyone could have! Just don't call him a hippo!
-          </p>
+          <div class="slideshow-container">
+            <div class="character-slides fade">
+              <img class="circle-img" src="./images/Moomin-img.jpg" alt="Moomin Characters" />
+              <h2 class="slide-text">Moomin</h2>
+              <p class="slide-text">
+                Moomintroll or simply, Moomin, he is, well, a Moomin; a fun loving young boy from
+                Moominvalley. He always tries to be good but sometimes his curiosity gets him into
+                trouble. Brave and always wanting to make his friends happy, Moomin is the best
+                friend anyone could have! Just don't call him a hippo!
+              </p>
+            </div>
 
-          <img class="circle-img" src="./images/MoominParents-img.jpg" alt="Moomin Characters" />
-          <h2>MoominMamma & MoominPappa</h2>
-          <p>
-            The perfect yin and yang. Moominmpappa is a restless soul. When he was young, he left
-            the orphanage to venture out into the world. Now that he is settled down as a father, he
-            is often writing stories of his life to share with his family. Moominmamma is the steady
-            hand of the family. Always calm and rarely angry. She is never without her purse. It
-            holds handy essential items like dry socks and pudding. It might even hold hopes and
-            dreams!
-          </p>
-        </div>
+            <div class="character-slides fade">
+              <img
+                class="circle-img"
+                src="./images/MoominParents-img.jpg"
+                alt="Moomin Characters" />
+              <h2 class="slide-text">MoominMamma & MoominPappa</h2>
+              <p class="slide-text">
+                The perfect yin and yang. Moominmpappa is a restless soul. When he was young, he
+                left the orphanage to venture out into the world. Now that he is settled down as a
+                father, he is often writing stories of his life to share with his family.
+                Moominmamma is the steady hand of the family. Always calm and rarely angry. She is
+                never without her purse. It holds handy essential items like dry socks and pudding.
+                It might even hold hopes and dreams!
+              </p>
+            </div>
 
-        <div class="container">
-          <img class="circle-img" src="./images/Snufkin-img.jpg" alt="Moomin Characters" />
-          <h2>Snufkin</h2>
-          <p>
-            The wanderer of Moominvalley, Snufkin has adventure in his heart. He can be a loner but
-            always has time for his friend Moomin. He loves fishing, playing his harmonica and
-            travel.
-          </p>
+            <div class="character-slides fade">
+              <img class="circle-img" src="./images/Snufkin-img.jpg" alt="Moomin Characters" />
+              <h2 class="slide-text">Snufkin</h2>
+              <p class="slide-text">
+                The wanderer of Moominvalley, Snufkin has adventure in his heart. He can be a loner
+                but always has time for his friend Moomin. He loves fishing, playing his harmonica
+                and travel.
+              </p>
+            </div>
 
-          <img class="circle-img" src="./images/LittleMy-img.jpg" alt="Moomin Characters" />
-          <h2>Little My</h2>
-          <p>
-            She may be small but never underestimate her. This naughty little girl loves to cause
-            trouble and longs for adventure. Watch out, she likes to bite!
-          </p>
+            <div class="character-slides fade">
+              <img class="circle-img" src="./images/LittleMy-img.jpg" alt="Moomin Characters" />
+              <h2 class="slide-text">Little My</h2>
+              <p class="slide-text">
+                She may be small but never underestimate her. This naughty little girl loves to
+                cause trouble and longs for adventure. Watch out, she likes to bite!
+              </p>
+            </div>
+
+            <!-- Slideshow arrows -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
         </div>
       </section>
     </main>
