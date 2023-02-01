@@ -8,3 +8,8 @@ body {
   font-size: 16px;
   line-height: 1.6rem;
 }
+
+.moomins-group-img {
+  width: 15em;
+  border-radius: 100%;
+}
