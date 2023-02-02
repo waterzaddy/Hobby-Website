@@ -4,14 +4,25 @@
 
 body {
   color: #333;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
   line-height: 1.6rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Libre Bodoni", serif;
+  font-weight: bold;
+  padding-bottom: 0.5em;
 }
 
 .container {
   height: auto;
-  padding: 3% 20% 3% 20%;
+  padding: 6% 20% 6% 20%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +61,25 @@ body {
 #title {
   background-image: url(./images/MoominRunning-img.jpg);
   background-size: cover;
-  height: 600px;
+  height: 650px;
+}
+
+h1 {
+  font-family: gill sans;
+  color: white;
+  font-size: 3em;
+  line-height: 1.5em;
+  padding-top: 75px;
+  text-shadow: 0 0 30px pink;
+}
+
+.moominvalley {
+  font-family: gill sans;
+  color: white;
+  font-size: 3em;
+  line-height: 1.5em;
+  padding-top: 75px;
+  text-shadow: 0 0 30px pink;
 }
 
 /********** ABOUT SECTION **********/
@@ -89,7 +118,7 @@ body {
   margin: auto;
 }
 
-.character-slides {
+.characterSlides {
   display: none;
 }
 
@@ -116,7 +145,7 @@ body {
   background-color: rgba(135, 206, 235, 0.8);
 }
 
-.slide-text {
+.slideText {
   position: absolute;
   text-align: center;
 }
