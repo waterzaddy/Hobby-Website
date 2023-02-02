@@ -3,7 +3,7 @@
 }
 
 body {
-  color: #333;
+  color: rgb(70, 70, 70);
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 17px;
@@ -113,7 +113,7 @@ h1 {
   box-sizing: border-box;
 }
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 600px;
   position: relative;
   margin: auto;
 }
@@ -129,17 +129,17 @@ h1 {
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 1em;
+  padding: 0.5em;
   top: 50%;
   font-size: 30px;
   transition: 0.7s ease;
-  border-radius: 0 3px 0 3px;
+  border-radius: 0 5px 5px 0;
   user-select: none;
 }
 
 .next {
   right: 0;
-  border-radius: 3px 0 3px 0;
+  border-radius: 5px 0 0 5px;
 }
 
 .prev:hover,
@@ -149,8 +149,8 @@ h1 {
 
 /* Slide Text */
 .slideText {
-  color: black;
-  font-size: 15px;
+  /* color: black;
+  font-size: 15px; */
   padding: 8px 12px;
   position: relative;
   bottom: 8px;
