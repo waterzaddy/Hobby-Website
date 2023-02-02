@@ -188,3 +188,11 @@ h1 {
     opacity: 1;
   }
 }
+
+footer {
+  background-color: skyblue;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0 10px;
+}
