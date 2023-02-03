@@ -65,20 +65,21 @@ h6 {
 }
 
 h1 {
-  font-family: gill sans;
+  font-family: "Josefin Sans", sans-serif;
   color: white;
   font-size: 3em;
+  text-align: center;
   line-height: 1.5em;
-  padding-top: 75px;
+  padding-top: 100px;
   text-shadow: 0 0 30px pink;
 }
 
 .moominvalley {
-  font-family: gill sans;
+  font-family: "Josefin Sans", sans-serif;
   color: white;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1.5em;
-  padding-top: 75px;
+  padding-top: 0px;
   text-shadow: 0 0 30px pink;
 }
 
